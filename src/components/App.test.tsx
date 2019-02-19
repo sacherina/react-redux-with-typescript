@@ -1,9 +1,9 @@
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme, { shallow } from 'enzyme';
-import App from './Header';
-import Header from '../container/Header';
-import Footer from '../container/Footer';
+import App from './App';
+import Header from '../containers/Header';
+import Footer from '../containers/Footer';
 import Routing from './Routing';
 
 Enzyme.configure({adapter: new Adapter()});
@@ -33,4 +33,5 @@ describe('App component', () => {
     const wrapper = shallow(getApp({}));
     expect(wrapper.find(Routing)).toHaveLength(1);
   });
+  
 });

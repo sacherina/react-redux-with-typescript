@@ -8,7 +8,7 @@ import thunk from 'redux-thunk'
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import App from './container/App';
+import App from './containers/App';
 
 const store = createStore(RootReducer, applyMiddleware(thunk));
 

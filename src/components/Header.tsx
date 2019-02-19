@@ -1,14 +1,10 @@
 import * as React from 'react';
 
-import Header from '../container/Header';
-import Routing from './Routing';
-import Footer from '../container/Footer';
+import { IHeaderProps } from '../containers/Header';
 
-import { IAppProps } from '../container/App';
-
-const App = (props: IAppProps) => 
+const Header = (props: IHeaderProps) => 
     <div>
         Header
     </div>;
 
-export default App;
+export default Header;

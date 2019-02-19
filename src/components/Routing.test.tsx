@@ -5,11 +5,12 @@ import Routing from './Routing';
 
 import { Switch } from 'react-router';
 
-Enzyme.configure({adapter: new Adapter()})
+Enzyme.configure({adapter: new Adapter()});
+
 describe('Routing component', () => {
 
-    const getRouting = (props: any) => 
-        <Routing {...props}/>
+  const getRouting = (props: any) => 
+    <Routing {...props}/>;
 
   test('renders', () => {
     const wrapper = shallow(getRouting({}));
@@ -20,4 +21,5 @@ describe('Routing component', () => {
     const wrapper = shallow(getRouting({}));
     expect(wrapper.find(Switch)).toHaveLength(1);
   });
+  
 });
